@@ -97,7 +97,7 @@ html, body {
 
   /* Ваши стили */
   .header__wrapper ol {
-    padding-left: 20px; /* Убираем отступ слева у списка */
+    padding-left: 25px; /* Убираем отступ слева у списка */
   }
 
   .header__wrapper ol li {
