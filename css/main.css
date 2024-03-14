@@ -262,12 +262,12 @@ table,
   }
 
 
-  .container4 {
-    padding: 0 100px;
-    display: flex;
-    justify-content: space-between;
+  .container4 {pace-between;
     text-align: center;
     column-gap: 150px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: s
 }
 
 .header__wrapper2 {
@@ -285,11 +285,47 @@ table,
   top: 220px;
   left: 1365px;
   position: absolute;
+  z-index: -1; /* Переместить изображение под фон */
 }
 .summary-2.img {
   top: 1160px;
   left: 0px;
   position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+  .header__wrapper1 {
+      margin-top: 20px; /* Установить небольшой отступ между фото и таблицей */
+  }
+
+  .container3,
+  .container4 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .header__wrapper1,
+  .header__wrapper2 {
+      width: 100%;
+  }
+
+  .summary-l.img,
+  .summary-1.img,
+  .summary-2.img {
+      position: relative;
+      top: auto;
+      left: auto;
+  }
+
+  .summary-2.img {
+      margin-top: 20px; /* Пространство между фотографией и таблицей */
+  }
+
+  table,
+  .header__wrapper2 table {
+      width: 100%;
+  }
 }
 
 /* photogallery */
@@ -345,7 +381,7 @@ table,
 
 .bio__wrapper{
 
-  padding: 0 20px;
+  padding: 0 5px;
   max-width: 1300px;
   height: 600px;
   top: 110px;
