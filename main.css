@@ -1,0 +1,404 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+
+html, body {
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 808 px;
+
+}
+
+
+/* Nav */
+
+.nav{
+    padding: 24px 0;
+    color: #000000;
+}
+
+.nav-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.logo {
+    color:#3D1515;
+    font-size:35px ;
+    font-family: "Inter";
+    font-style: Medium;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    column-gap: 40px;
+    font-size:16px;
+    font-weight:400;
+    font-family: "Inter";
+}
+
+.nav-list__link {
+  color: #000000;
+}
+
+
+.nav-list__link--active {
+  position: relative;
+}
+
+.nav-list__link--active::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 100%;
+
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #D69B9B;
+}
+
+
+/* Header */
+
+/* Стили для мобильных устройств */
+@media only screen and (max-width: 768px) {
+  .header {
+    padding: 20px 0; /* Уменьшаем внешние отступы для мобильных устройств */
+  }
+
+  .container2 {
+    padding: 0 15px; /* Уменьшаем внутренние отступы */
+  }
+
+  .header__wrapper {
+    font-size: 16px; /* Уменьшаем размер шрифта для мобильных устройств */
+    line-height: 1.5; /* Устанавливаем межстрочный интервал */
+  }
+  .header__title1, .header__title2, .header__title3 {
+    color: #3D1515; 
+}
+
+  /* Ваши стили */
+  .header__wrapper ol {
+    padding-left: 25px; /* Убираем отступ слева у списка */
+  }
+
+  .header__wrapper ol li {
+    margin-bottom: 10px; /* Устанавливаем отступ между элементами списка */
+  }
+
+  .header__wrapper ol li a {
+    color: #000000; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+  }
+}
+
+/* Стили для ноутбуков и компьютеров */
+@media only screen and (min-width: 769px) {
+  .header {
+    padding: 40px 0;
+    min-height: 290px;
+  }
+
+  .container2 {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 1600px;
+    height: 320px;
+  }
+
+  .header__wrapper {
+    display: flex;
+    color: #000000;
+    flex-wrap: wrap;
+    padding: 0 -5px;
+    width: 1600px;
+    height: 320px;
+    top: 130px;
+    left: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Inter";
+    position: absolute;
+    column-gap:75px;
+    text-align: left;
+    font-family: Inter;
+    line-height: 30px;
+  }
+  .header__title1, .header__title2, .header__title3 {
+    color: #3D1515; 
+}
+
+.header__wrapper ol {
+    color: #000000; 
+}
+
+.header__wrapper ol li a {
+    color: #000000; 
+}
+
+.l.img {
+  max-width: 295px;
+  height: auto; /* Автоматический размер по высоте для поддержки адаптивности */
+  position: relative; /* Изменено на относительное позиционирование */
+  margin-left: auto; /* Центрирование по горизонтали */
+  margin-right: auto; /* Центрирование по горизонтали */
+}
+}
+
+  /* page */
+
+  .section{
+    padding: 10px 0;
+  }
+
+  .projects{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1620px;
+  }
+
+  .project{
+    max-width: 315px;
+    box-shadow: 0px 5px 35px #ECDFCE;
+    background-color: #FFFFFF;
+  }
+  .project__title{
+    padding: 15px 20px 20px 25px;
+    font-weight: 570;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #3D1515;
+  }
+
+  /* summary */
+
+  .header2 {
+    padding: 40px 0;
+    min-height: 1800px;
+
+}
+
+  .container3 {
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 1600 px;
+    height: 1500px;
+
+}
+
+.header__wrapper1 {
+
+  display: flex;
+  color: #000000;
+  flex-wrap: wrap;
+  padding: 0 5px;
+  width: 690px;
+  height: 460px;
+  top: 170px;
+  left: 470px;
+  font-size:20px;
+  font-weight:400;
+  font-family: "Inter";
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+}
+
+.header__wrapper1 h2,
+.header__wrapper1 h3,
+.header__wrapper1 h4  {
+  font-size: 40px; 
+  font-family: "Inter"; 
+  color:#3D1515
+}
+.header__wrapper1 a {
+  color: #000000; 
+}
+
+table,
+.header__wrapper1 table  {
+    border-collapse: collapse;
+    width: 600px;
+    height: 400px;
+  }
+  
+  td, th {
+    border: 1px solid #000000; 
+    padding: 8px; 
+    text-align: center; 
+    font-size: 20px; 
+    font-family: "Inter";
+  }
+  
+  td:first-child {
+    background-color: #D69B9B;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .container3 {
+      padding: 0 15px; /* Уменьшим отступы для мобильных устройств */
+      max-width: 800px; /* Уменьшим максимальную ширину контейнера для мобильных устройств */
+    }
+  
+    .header__wrapper1 {
+      color: #000000;
+      text-align: center;
+    }
+  
+    .header__wrapper1 h2,
+    .header__wrapper1 h3,
+    .header__wrapper1 h4  {
+      font-size: 28px; /* Уменьшим размер шрифта для мобильных устройств */
+      color: #3D1515;
+    }
+  
+    .header__wrapper1 a {
+      color: #000000; 
+    }
+  
+    table,
+    .header__wrapper1 table  {
+      border-collapse: collapse;
+      width: 100%; /* Растянем таблицу на всю доступную ширину */
+      max-width: 600px; /* Ограничим максимальную ширину таблицы */
+      margin: 0 auto; /* Центрируем таблицу на странице */
+    }
+  
+    td, th {
+      border: 1px solid #000000; 
+      padding: 8px; 
+      text-align: center; 
+      font-size: 16px; /* Уменьшим размер шрифта для мобильных устройств */
+      font-family: "Inter";
+    }
+  
+    td:first-child {
+      background-color: #D69B9B;
+    }
+  }
+  
+
+
+/* photogallery */
+
+.photos{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.photo{
+  max-width: 460px;
+  box-shadow: 0px 5px 35px #5977c8;
+}
+
+.title-2{
+  
+  margin-bottom: 30px;
+
+  font-size: 70px;
+  font-style: Regular;
+  text-transform: uppercase;
+  line-height: 1.6;
+  color: #337ACD;
+  text-align: center;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .title-2 {
+    font-size: 40px; /* Измените размер шрифта на меньший */
+  }
+}
+
+
+/*biography*/
+
+.bio {
+  padding: 40px 0;
+  min-height: 800px;
+
+}
+
+.container__bio{
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 1600 px;
+  height: 600px;
+
+}
+
+.bio__wrapper{
+
+  padding: 0 5px;
+  max-width: 1300px;
+  height: 600px;
+  top: 110px;
+  left: 450px;
+  position: absolute;
+}
+
+.bio__title {
+  margin-bottom: 10px;
+  text-align: left;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 2.5;
+}
+
+.bio__title h1 {
+  text-align: center; 
+  color: #3D1515; 
+  font-size: 40px;
+  font-style: Extra light;
+}
+
+@media screen and (max-width: 767px) {
+  .bio__wrapper {
+    position: relative; /* Изменение позиции на относительную для мобильных устройств */
+    top: auto; /* Сброс вертикального смещения */
+    left: auto; /* Сброс горизонтального смещения */
+    margin-top: 20px; /* Небольшой отступ сверху для разделения фотографии и текста */
+  }
+
+  .bio__title {
+    text-align: left; 
+    margin-bottom: 10px;
+    text-align: left;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2.2;/* Выравнивание заголовка по центру */
+  }
+
+  .bio__title h1 {
+    text-align: center; 
+    color: #3D1515; 
+    font-size: 25px;
+    font-style: Extra light;
+
+  }
+}
