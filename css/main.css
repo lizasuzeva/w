@@ -308,6 +308,7 @@ table,
 }
 
 .title-2{
+  
   margin-bottom: 30px;
 
   font-size: 70px;
@@ -319,16 +320,9 @@ table,
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .title-2 {
-    font-size: 20px; /* Уменьшаем размер шрифта для мобильных устройств */
-    margin-bottom: 15px; /* Уменьшаем отступ снизу */
-    font-style: Regular;
-    text-transform: uppercase;
-    line-height: 1.2;
-    color: #337ACD;
-    text-align: center;
-    text-decoration: underline;/
+    font-size: 40px; /* Измените размер шрифта на меньший */
   }
 }
 
