@@ -97,7 +97,8 @@ html, body {
 
   /* Ваши стили */
   .header__wrapper ol {
-    padding-left: 0; /* Убираем отступ слева у списка */
+    list-style-type: decimal; /* Устанавливаем стандартный тип нумерации (1, 2, 3 и т. д.) */
+    padding-left: 5px; /* Убираем отступ слева у списка */
   }
 
   .header__wrapper ol li {
