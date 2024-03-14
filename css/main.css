@@ -190,9 +190,6 @@ html, body {
     color: #3D1515;
   }
 
-
-
-
   /* summary */
 
   .header2 {
@@ -262,13 +259,13 @@ table,
   }
 
 
-  .container4 {pace-between;
-    text-align: center;
-    column-gap: 150px;
+  .container4 {
     padding: 0 100px;
     display: flex;
-    justify-content: s
-}
+    justify-content: space-between;
+    text-align: center;
+    column-gap: 150px;
+  }
 
 .header__wrapper2 {
     display: flex;
@@ -281,52 +278,45 @@ table,
   color: #000000; 
 }
 
-.summary-1.img {
-  top: 220px;
-  left: 1365px;
-  position: absolute;
-  z-index: -1; /* Переместить изображение под фон */
-}
-.summary-2.img {
-  top: 1160px;
-  left: 0px;
-  position: absolute;
-}
 
-@media screen and (max-width: 768px) {
-  .header__wrapper1 {
-      margin-top: 20px; /* Установить небольшой отступ между фото и таблицей */
+@media only screen and (max-width: 768px) {
+  .container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .container3,
-  .container4 {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+  .summary-l.img {
+    position: static;
+    margin-bottom: 20px; /* Добавим немного отступа между фотографиями и таблицами */
   }
 
   .header__wrapper1,
   .header__wrapper2 {
-      width: 100%;
-  }
-
-  .summary-l.img,
-  .summary-1.img,
-  .summary-2.img {
-      position: relative;
-      top: auto;
-      left: auto;
-  }
-
-  .summary-2.img {
-      margin-top: 20px; /* Пространство между фотографией и таблицей */
+    position: static;
+    width: auto; /* Сбросим явно заданную ширину */
+    margin: 0 auto; /* Центрируем содержимое */
+    padding: 0; /* Сбросим явно заданные отступы */
   }
 
   table,
   .header__wrapper2 table {
-      width: 100%;
+    width: 100%; /* Ширина таблицы на всю доступную ширину */
+  }
+  
+  .container4 {
+    flex-direction: column; /* Располагаем элементы в столбик */
+    align-items: center; /* Центрируем элементы по центру */
+    margin-top: 280px; /* Добавим отступ сверху */
+  }
+
+  .header__wrapper2 {
+    width: 100%; /* Ширина 100% */
+    max-width: 100%; /* Максимальная ширина контейнера */
+    margin-top: 20px; /* Отступ сверху между таблицами */
   }
 }
+
 
 /* photogallery */
 
