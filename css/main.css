@@ -321,11 +321,11 @@ table,
 
 @media only screen and (max-width: 768px) {
   .title-2 {
-    font-size: 40px; /* Уменьшаем размер шрифта для мобильных устройств */
+    font-size: 30px; /* Уменьшаем размер шрифта для мобильных устройств */
     margin-bottom: 15px; /* Уменьшаем отступ снизу */
     font-style: Regular;
     text-transform: uppercase;
-    line-height: 1.6;
+    line-height: 1.2;
     color: #337ACD;
     text-align: center;
     text-decoration: underline;/
