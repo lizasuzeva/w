@@ -321,7 +321,7 @@ table,
 
 @media only screen and (max-width: 768px) {
   .title-2 {
-    font-size: 30px; /* Уменьшаем размер шрифта для мобильных устройств */
+    font-size: 20px; /* Уменьшаем размер шрифта для мобильных устройств */
     margin-bottom: 15px; /* Уменьшаем отступ снизу */
     font-style: Regular;
     text-transform: uppercase;
