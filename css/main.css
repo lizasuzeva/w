@@ -368,3 +368,30 @@ table,
   font-size: 40px;
   font-style: Extra light;
 }
+
+@media screen and (max-width: 767px) {
+  .bio__wrapper {
+    position: relative; /* Изменение позиции на относительную для мобильных устройств */
+    top: auto; /* Сброс вертикального смещения */
+    left: auto; /* Сброс горизонтального смещения */
+    margin-top: 20px; /* Небольшой отступ сверху для разделения фотографии и текста */
+  }
+
+  .bio__title {
+    text-align: left; 
+    margin-bottom: 10px;
+    text-align: left;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2.2;/* Выравнивание заголовка по центру */
+  }
+
+  .bio__title h1 {
+    text-align: center; 
+    color: #3D1515; 
+    font-size: 25px;
+    font-style: Extra light;
+
+  }
+}
